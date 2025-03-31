@@ -1,0 +1,52 @@
+.leftBar {
+    flex: 3;
+    height: calc(100vh - 50px);
+    overflow-y: scroll; /* ubacivanje skroa za levi deo fida */
+    position: sticky;/* kada skrolujemo stranicu da ostane 'zalepljeno' */
+    top: 50px;
+}
+/* stilizovanje skrola */
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(233, 236, 236);
+}
+::-webkit-scrollbar-thumb{
+    background-color: grey
+}
+
+.leftBarWrapp {
+    padding: 20px;
+    /* background-color: rgb(123, 248, 215); */
+}
+
+.leftBarList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.leftBarItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.feedIcon{
+    margin-right: 15px;
+}
+.leftBarButton{
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.leftBarLine{
+    margin: 20px 0; /* top/bottom margina 20 left/right 0 */
+
+}
+.leftBarFriendsList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

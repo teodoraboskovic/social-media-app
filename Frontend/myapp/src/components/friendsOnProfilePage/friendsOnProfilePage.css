@@ -1,0 +1,17 @@
+.rightbarFriend {
+    display: flex;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.rightbarFriendName {
+    margin-left: 15px;
+}
+
+.rightbarFriendImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+    object-fit: cover;
+}

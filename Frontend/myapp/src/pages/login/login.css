@@ -1,0 +1,76 @@
+.login {
+    display: flex;
+    /* preko cele sirine/visine ekrana */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(233, 236, 236);
+    align-items: center;
+    justify-content: center;
+}
+
+.loginWrapp {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    /* background-color: #86cbe7; */
+}
+
+.loginLeft,.loginRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* leva i desna strana bice pola loginforme */
+}
+.socialAppName{
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(2, 17, 67);
+    margin-bottom: 10px;
+}
+.loginDescription{
+    font-size: 24px;
+    color: rgb(2, 17, 67);
+}
+.loginForm{
+    height: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.loginInput{
+    height: 50px;
+    border: 1px solid grey;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.loginInput:focus{
+    outline: 0;
+}
+.loginButton{
+    height: 50px;
+    width: 320px;
+    border: 0;
+    background-color: rgb(206, 206, 206);
+    color: rgb(2, 17, 67);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.forgotPassword{
+    text-align: center;
+    color: rgb(2, 17, 67);
+}
+.registerButton{
+    height: 50px;
+    width: 320px;
+    border: 0;
+    background-color:#86cbe7;
+    color: rgb(2, 17, 67);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+} 

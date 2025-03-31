@@ -1,0 +1,109 @@
+.topbar {
+    height: 50px;
+    width: 100%;
+    background-color: #86cbe7;
+    display: flex;
+    /* sve u istom redu jedno za drugim */
+    align-items: center;
+    /* vertikalno centrirano*/
+    position: sticky;
+    /*razvlacenje prozora ne remeti raspored*/
+    top: 0;
+    z-index: 999;/* da ostale komponente ne prelaze preko glavnog menija */
+}
+
+.topbarLeft {
+    flex: 3;
+}
+.logo {
+    font-size: 24px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: rgb(2, 17, 67);
+    cursor: pointer;
+}
+.topbarCenter {
+    flex: 5;
+}
+
+.searchBar {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(233, 236, 236);
+    border-radius: 30px;
+    /*zaobljivanje ivica*/
+    /*centriranje*/
+    display: flex;
+    align-items: center;
+}
+
+.searchIcon {
+    font-size: 20px !important;
+    /*importatnt jer je ikonica objekat*/
+    margin-left: 10px;
+}
+
+.searchInput {
+    border: 0;
+    width: 70%;
+    background-color: rgb(233, 236, 236);
+}
+
+.searchInput:focus {
+    outline: 0;
+    
+}
+
+.topbarRight {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*razdvaja elemente unutar desnog dela menija sa razmakom izmedju, pre i posle*/
+    color: rgb(2, 17, 67);
+}
+
+.topbarLink {
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.topbarIcons {
+    display: flex;
+}
+.topbarIconItem {
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.topbarIconNumber {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(247, 0, 58);
+    border-radius: 50%;/*zaobljenost uglova da bismo dobili krug*/
+    color: rgb(2, 17, 67);
+    position: absolute;
+    /*da bismo priblizili brojeve ikonicama na dole i na levo*/
+    top: -5px;
+    right: -5px;
+    /*centriranje brojeva*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/*ceo menibar ce biti podeljen na 12 delova (flex)
+levi na 3, centralni na 5, a desni na 4 jedinice
+*/
+
+
+.profilePicture {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;/*da slika obuhvati ceo meni bar*/
+    cursor: pointer;
+}

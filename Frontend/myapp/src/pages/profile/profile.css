@@ -1,0 +1,53 @@
+.profilePage {
+    display: flex;
+}
+
+.profilePageRight {
+    flex: 9;
+}
+
+.profileDesign {
+    height: 320px;
+    position: relative;
+}
+
+.profilePageCoverPhoto {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.profilePageProfilePhoto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    /* centriranje unutar profileDesign-a */
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 160px;
+    border: 2px solid rgb(233, 236, 236);
+}
+
+.profileInformation {
+    display: flex;
+    /* jedna stavka ispod druge */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profileInformationName {
+    font-size: 24px;
+}
+
+.profileInfoDescription {
+    font-weight: 300;
+}
+
+.profilePageRightBottom {
+    display: flex;
+}
